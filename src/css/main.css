@@ -1,0 +1,487 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* :root {
+    color-scheme: light dark;
+} */
+
+body {
+    background-color: #191919;
+}
+
+.header {
+    border-top: 12px solid #045e2d;
+    border-bottom: 12px solid #045e2d;
+    background-color: #191919;
+
+
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+}
+
+.titulo-logo {
+    color:white;
+    text-decoration: none;
+    font-size: 50px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.carrito {
+    font-size: 25px;
+    color: white;
+}
+
+.logo-bitter {
+    width: 80px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav-menu {
+    font-size: 1.5rem;
+
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-link {
+    color:crimson;
+    text-decoration: none;
+}
+
+.nav-link.active {
+    /* text-decoration: underline; */
+    font-size: 1.5rem;
+    color: white;
+}
+
+.products-container {
+    min-height: 30vh;
+    display: grid;
+    place-items: center;
+}
+
+.oscuro {
+    background-color: black !important;
+}
+
+.item-list-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.productos-grilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    color:#045e2d;
+    text-align:center ;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.producto {
+    background-color:orangered;
+    border-radius: .5rem;
+    padding: 1rem;
+
+}
+
+.item-detail-container {
+    color:white;
+    font-size: 0.5rem;
+}
+
+.grid {
+    display: grid;
+}
+
+.titulo-categoria {
+    color: white;
+    padding: 15px;
+}
+
+footer {
+    margin-top: 30rem;
+}
+
+.footer {
+    border-top: 12px solid #045e2d;
+    border-bottom: 12px solid #045e2d;
+    background-color: #191919;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column ;
+    justify-content: left;
+    align-items: center;
+    gap: 5px;
+}
+
+.politica-cookies {
+    display: flex;
+    justify-content: space-between;
+    gap: 150px;
+    padding: 30px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: .8rem;
+}
+
+.detalle-contenedor {
+    margin: auto;
+    width: 95%;
+    max-width: 1000px;
+    max-height: 100%;
+    background-color: #c5baaf;
+    border-radius: 10px;
+    margin-top: 50px;
+    padding:20px 20px;
+  
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 60px 60px 60px 60px 60px 60px;
+    column-gap: 8px;
+    row-gap: 20px;
+}
+
+.table {
+  justify-content: center;
+  margin-left: 25px;;
+}
+
+.tabla-caracteristicas {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.tabla-caracteristicas h1 {
+    font-size: 1.5rem;
+    color:crimson;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+  .tabla-caracteristicas h3 {
+    font-size: 1rem;
+    padding: 5px;
+  }
+
+  .titulo-caracteristica {
+    background-color: #191919;
+    border-radius: 5px;
+  }
+  
+  .valor-caracteristica {
+    background-color: rgb(71, 64, 64);
+    border-radius: 3px;
+  }
+
+  .tabla-imagen {
+    width: 100%;
+    position: relative;
+    align-content: center;
+    align-items: center;
+  }
+  
+  .tabla-imagen img {
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    width: 100%;
+    border-radius: 15px;
+    padding: 0px 3px;
+  }
+
+  th {
+    padding: 2px;
+  }
+
+  .cerrar {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #ff0303;
+    font-size: 30px;
+  }
+
+  .boton {
+    background-color: black;
+    color: white;
+    width: 120px;
+    height: 30px;
+    border-radius: 10px;
+    border: 2 solid white;
+  }
+
+  .boton:hover {
+    transform: scale(1.05);
+    box-shadow: 1px 1px 1x 1px rgba(256, 256, 256, 0.25);
+    background-color: #eef0ef;
+    color: black
+  }
+
+  .contenedor-elementos {
+    background-color: #fc7800;
+    box-shadow: 2px 2px 2px 1px rgba(241, 239, 239, 0.918);
+    border-radius: 15px;
+    text-align: center;
+    padding-bottom: 5px;
+  }
+  
+  .producto:hover {
+    transform: scale(1.05);
+    box-shadow: 3px 3px 2px 1px rgba(240, 0, 14, 0.75);
+    background-color: #045e2d;
+    color:#fc7800
+  }
+
+.precio {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color:#191919;
+    margin: 5px;
+}
+
+.imagen {
+    width: 320px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.div-botones {
+    display: flex;
+    justify-content: space-around;
+    gap:10px;
+}
+
+.item-count button {
+
+    background-color: #191919;
+    width: 150px;
+    height: 2rem;
+    color: white;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    border: 2px solid black;
+    transition: .2s;
+}
+
+.item-count button:hover {
+    background-color: white;
+    color: black;
+}
+
+.item-count {
+    display: flex;
+    align-content: center;
+}
+
+.item-count-botones button {
+
+    background-color: #191919;
+    width: 35px;
+    height: 2rem;
+    color: white;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    border: 2px solid black;
+    transition: .2s;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.numerito {
+    color: black;
+    font-size: 20px;
+}
+
+.money-converter {
+    color: white;
+    font-size: 20pxS;
+}
+
+.currency-contenedor {
+    margin: auto;
+    width: 85%;
+    max-width: 1000px;
+    height: 300px;
+    max-height: 100%;
+    background-color: #a11313;
+    border-radius: 10px;
+    justify-content: center;
+    margin-top: 50px ;
+  
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 90px 90px 90px 90px 90px;
+    column-gap: 8px;
+    row-gap: 2px;
+  }
+  
+  .ars {
+    width: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .table {
+    color: white;
+  }
+  
+  .icono-cambio-moneda {
+    font-size: 20px ;
+    font-weight: 400;
+    color: #191919;
+    padding: 0 5px;
+    margin: 8px;
+  }
+  
+  .icono-cambio-moneda:hover {
+    transform: scale(1.2);
+   }
+
+  .productos-grilla {
+    color:#eef0ef;
+    font-weight: 300;font-size: 1.1rem;
+
+   }
+  
+  .currency-contenedor {
+    justify-content: center;
+  }
+
+  .titulo-currency {
+    color:#191919;
+    background-color: #ffffff;
+    border-radius: 5px;
+    font-size: 2rem;
+    padding: 10px;
+    margin-left: 10px;
+  }
+  
+  .currency-tabla {
+    position: relative;
+    border-radius: 5px;
+    justify-content: center;
+    text-align: center;
+    Color: white;
+    font-size: 1.2rem;
+  }
+  
+  .currency-imagen img {
+    border-radius: 5px;
+    width: 280px;
+    margin: 10px;
+  }
+  
+  .currency-imagen p {
+    color: white;
+   }
+  
+   .currency-imagen {
+    position: relative;
+   }
+  
+  .money-converter {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #cerrar-monedas {
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    color: #ff0303;
+    font-size: 30px;
+  }
+
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: flex-start;
+}
+
+.formulario input {
+    padding: .5rem;
+    width: 18rem;
+    border-radius: .5rem;
+    border: 2px solid black;
+}
+
+.formulario input:focus {
+    outline: 0;
+    border: 2px solid var(--clr-main);
+    outline: 2px solid var(--clr-main);
+}
+
+.not-found {
+  color: white;
+}
+
+.consulta {
+  color:white;
+  max-width: 1000px;
+  margin-left: 150px;
+  margin-top: 15px;
+}
+
+.titulo-consulta {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.boton-agregar {
+  
+    background-color:aqua;
+    color:#191919;
+    width: 120px;
+    height: 30px;
+    border-radius: 10px;
+    border: 2 solid white;
+    margin: 5px;
+
+  }
+
+  .boton:hover {
+    transform: scale(1.05);
+    box-shadow: 1px 1px 1x 1px rgba(256, 256, 256, 0.25);
+    background-color: #eef0ef;
+    color: black
+  
+}
+
+.respuesta-consulta {
+  color: white;
+}

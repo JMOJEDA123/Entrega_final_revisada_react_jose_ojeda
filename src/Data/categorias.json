@@ -1,0 +1,19 @@
+[
+    {
+        "id": "fiat",
+        "nombre": "Fiat"
+    },
+    {
+        "id": "jeep",
+        "nombre": "Jeep"
+    },
+    {
+        "id": "peugeot",
+        "nombre": "Peugeot"
+    },
+    {
+        "id": "ford",
+        "nombre": "Ford"
+    }
+
+]
